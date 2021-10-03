@@ -30,13 +30,13 @@ async def start(event):
     ok = await event.client(GetFullUserRequest(event.sender_id))
     await event.reply(
         f"Hi `{ok.user.first_name}`\nThis is A CompressorBot Which Can Encode Videos.\nReduce Size of Videos With Negligible Quality Change\nU can Generate Samples/screenshots too.",
-        buttons=[
-            [Button.inline("HELP", data="ihelp")],
-            [
-                Button.url("SOURCE CODE", url="github.com/1Danish-00/CompressorBot"),
-                Button.url("DEVELOPER", url="t.me/danish_00"),
-            ],
-        ],
+       # buttons=[
+         #   [Button.inline("HELP", data="ihelp")],
+          #  [
+             #   Button.url("SOURCE CODE", url="github.com/1Danish-00/CompressorBot"),
+            #    Button.url("DEVELOPER", url="t.me/danish_00"),
+         #   ],
+      #  ],
     )
 
 
@@ -57,13 +57,13 @@ async def beck(event):
     ok = await event.client(GetFullUserRequest(event.sender_id))
     await event.edit(
         f"Hi `{ok.user.first_name}`\nThis is A CompressorBot Which Can Encode Videos.\nReduce Size of Videos With Negligible Quality Change\nU can Generate Samples/screenshots too.",
-        buttons=[
-            [Button.inline("HELP", data="ihelp")],
-            [
-                Button.url("SOURCE CODE", url="github.com/1Danish-00/"),
-                Button.url("DEVELOPER", url="t.me/danish_00"),
-            ],
-        ],
+      #  buttons=[
+        #    [Button.inline("HELP", data="ihelp")],
+         #   [
+         #       Button.url("SOURCE CODE", url="github.com/1Danish-00/"),
+           #     Button.url("DEVELOPER", url="t.me/danish_00"),
+         #   ],
+     #   ],
     )
 
 
